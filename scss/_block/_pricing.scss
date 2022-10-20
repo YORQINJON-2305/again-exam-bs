@@ -1,0 +1,107 @@
+
+
+.pricing-title{
+  font-size: 36px;
+  margin-bottom: 10px !important;
+}
+
+.pricing-text{
+  margin-bottom: 30px !important;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+}
+
+.pricing-item{
+  width: 100%;
+  max-width: 406px;
+  padding: 8px 12px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  transition: border 0.3s ease;
+
+  &:hover{
+    border-color: #FF007A;
+  }
+
+  &:not(:last-child){
+    margin-bottom: 42px;
+  }
+}
+
+.pricing-item-title{
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Roboto";
+}
+
+.pricing-price{
+  margin-bottom: 8px;
+  font-size: 28px;
+}
+
+.pricing-year{
+  margin-bottom: 40px;
+  color: #3D3A41;
+}
+
+.pricing-limit-list{
+  margin-bottom: 40px;
+}
+
+.pricing-limit{
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child){
+    margin-bottom: 16px;
+  }
+
+  &::before{
+    display: block;
+    width: 17px;
+    height: 12px;
+    margin-right: 20px;
+    background-image: url("../../images/access.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    content: "";
+  }
+}
+
+.pricing-limit-text{
+  color: #3D3A41;;
+}
+
+.pricing-link{
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 16px 80px;
+  border: 1px solid #FF007A;
+  border-radius: 32px;
+  color: #FF007A;
+  white-space: nowrap;
+  transition: 0.3s ease;
+
+  &:hover{
+    background-color: #FF007A;
+    color: #fff;
+  }
+}
+
+@include  mobile-first(768px){
+  .pricing-item{
+    padding: 31px 34px;
+  }
+}
+
+@include mobile-first(992px){
+  .pricing-item:not(:last-child){
+    margin-right: 32px;
+    margin-bottom: 0;
+  }
+
+}
+

@@ -1,4 +1,6 @@
-
+.customer{
+  margin-bottom: 90px;
+}
 
 .customer-title{
   margin-bottom: 16px !important;
@@ -13,15 +15,19 @@
   color: #3D3A41;
 }
 
+.customer-list{
+  display: flex;
+  justify-content: center;
+}
+
 .customer-item{
   width: 100%;
-  max-width: 406px;
   padding: 30.73px;
   background-color: #F7F5FF;
   border-radius: 8px;
 
   &:not(:last-child){
-    margin-right: 32px;
+    margin: 0px 32px;
   }
 
   &::before{
@@ -41,20 +47,32 @@
   color:  #211F25;
 }
 
-.name-wrap{
-  &::before{
+.name-wrap::before{
     display: block;
     width: 54px;
     height: 54px;
     margin-right: 15px;
-    background-image: url("../../images/simmons.png");
     background-repeat: no-repeat;
     background-position: center;
     content: "";
-  }
+}
+
+.simons::before{
+  background-image: url("../../images/simmons.png");
+}
+
+.darrell::before{
+  background-image: url("../../images/darel.png");
+}
+
+.henry::before{
+  background-image: url("../../images/henry.png");
 }
 
 .slick-arrow {
+  position: relative;
+  top: 120px;
+  z-index: 5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,10 +84,25 @@
   background-color: transparent;
   cursor: pointer;
 
-  img {
+
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 15px;
     height: 15px;
+    color: #FF007A;
   }
+
+  &:hover{
+    background-color: #FF007A;
+
+    span{
+      color: #fff;
+    }
+  }
+
+
 }
 
 .slick-dots{
@@ -105,4 +138,19 @@
     background-color: #FF007A !important;
   }
 
+}
+
+@include mobile-first(992px){
+  .customer{
+    padding: 100px 0px;
+    background-color: #FCFBFF;
+  }
+
+  .customer-title-wrap{
+    margin-bottom: 80px;
+  }
+
+  .customer-item{
+    max-width: 406px;
+  }
 }

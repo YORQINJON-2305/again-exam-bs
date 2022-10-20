@@ -1,0 +1,51 @@
+.site-article{
+  margin-bottom: 80px;
+  padding: 83px 0;
+  background-color: #6B50FF;
+}
+
+.article-title{
+  margin-bottom: 10px;
+  font-size: 38px;
+  line-height: 46px;
+  color: #fff;
+}
+
+.article-text{
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.article-input{
+  width: 100%;
+  max-width: 365px;
+  margin-right: 10px;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 32px;
+}
+
+.sign-btn{
+  padding: 12px 18px;
+  color: #fff;
+  white-space: nowrap;
+  border: none;
+  border-radius: 32px;
+  background-color: #FF007A;
+}
+
+.article-bottom-text{
+  font-size: 12px;
+
+}
+
+@include mobile-first(992px){
+  .article-title{
+    margin-bottom: 24px;
+  }
+
+  .article-text-wrap{
+    margin-bottom: 44px;
+  }
+}
