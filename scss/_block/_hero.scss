@@ -1,0 +1,156 @@
+.hero{
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.hero-text-wrap{
+  width: 100%;
+  max-width: 737px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.hero-title{
+  margin-bottom: 10px !important;
+  line-height: 42px;
+  letter-spacing: -1%;
+}
+
+.text-wrap{
+  width: 100%;
+  max-width: 471px;
+  margin: 0 auto;
+}
+
+.hero-text{
+  margin-bottom: 80px !important;
+  line-height: 22px;
+  letter-spacing: 1%;
+}
+
+.modal-wrap{
+  width: 100%;
+  top: -250%;
+  z-index: 10;
+  transition: top 0.5s ease-in-out;
+}
+
+.hero.active .modal-wrap{
+  top: 0%;
+}
+
+.iframe-close{
+  display: block;
+  width: 26px;
+  height: 26px;
+  margin-bottom: 8px;
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  background-image: url("../../images/close-icon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.iframe-modal{
+  width: 100%;
+  height: 315px;
+}
+
+.hero-link-btn{
+  margin-bottom: 10px;
+  padding: 12px 0;
+  border: 1px solid #fff;
+  border-radius: 32px;
+  background-color: transparent;
+  line-height: 25px;
+
+  &::after{
+    display: block;
+    width: 36px;
+    height: 36px;
+    margin-left: 16px;
+    background-image: url("../../images/video-icon.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+  }
+}
+
+.hero-link-started{
+  padding: 17.5px 0;
+  border: none;
+  border-radius: 32px;
+  background-color:  #FF007A;
+  line-height: 25px;
+}
+
+.hero-img-wrap{
+  left: 50%;
+  width: 100%;
+}
+
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 8;
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(92, 99, 106, 0.41);
+}
+
+.hero.active .overlay{
+  display: block;
+}
+
+@include mobile-first(480px){
+  .hero-text-wrap{
+    margin-bottom: 100px;
+  }
+  .hero-link-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-link-btn{
+    width: 100%;
+    max-width: 187px;
+    margin-right: 33px;
+    margin-bottom: 0;
+  }
+
+  .hero-link-started{
+    width: 100%;
+    max-width: 187px;
+  }
+}
+
+@include mobile-first(640px){
+  .hero-title{
+    margin-bottom: 24px;
+    font-size: 45px;
+    line-height: 55px;
+  }
+
+  .hero-text{
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@include  mobile-first(992px){
+
+  .hero{
+    padding-top: 125px;
+    padding-bottom: 146px;
+  }
+
+  .hero-title{
+    font-size: 56px;
+    line-height: 67px;
+  }
+
+}

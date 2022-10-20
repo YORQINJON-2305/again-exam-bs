@@ -1,0 +1,46 @@
+
+
+.protection-item{
+  padding: 100px 0;
+  &:first-child{
+    background-color: #FCFBFF;
+  }
+}
+
+.protection-img{
+  margin-bottom: 50px;
+}
+
+.protection-title{
+  margin-bottom: 16px !important;
+  font-size: 38px;
+  line-height: 45px;
+  color: #211F25;
+}
+
+.protection-text{
+  margin-bottom: 40px !important;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  color: #3D3A41;
+}
+
+.protection-link{
+  display: inline-block;
+  padding: 17.5px 52.5px;
+  border: 1px solid #FF007A;
+  border-radius: 32px;
+  color: #FF007A;
+}
+
+@include mobile-first(992px){
+  .protection-img{
+    margin-bottom: 0;
+  }
+
+  .protection-title{
+    font-size: 48px;
+    line-height: 57px;
+    letter-spacing: -1%;
+  }
+}

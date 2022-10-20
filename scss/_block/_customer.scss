@@ -1,0 +1,108 @@
+
+
+.customer-title{
+  margin-bottom: 16px !important;
+  font-size: 36px;
+  line-height: 36px;
+  color: #211F25;;
+}
+
+.customer-text{
+  margin-bottom: 30px !important;
+  line-height: 22px;
+  color: #3D3A41;
+}
+
+.customer-item{
+  width: 100%;
+  max-width: 406px;
+  padding: 30.73px;
+  background-color: #F7F5FF;
+  border-radius: 8px;
+
+  &:not(:last-child){
+    margin-right: 32px;
+  }
+
+  &::before{
+    display: block;
+    width: 112px;
+    height: 18px;
+    margin-bottom: 30.73px;
+    background-image: url("../../images/stars.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+  }
+}
+
+.customer-item-text{
+  margin-bottom: 30px;
+  color:  #211F25;
+}
+
+.name-wrap{
+  &::before{
+    display: block;
+    width: 54px;
+    height: 54px;
+    margin-right: 15px;
+    background-image: url("../../images/simmons.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+  }
+}
+
+.slick-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 54px;
+  height: 54px;
+  border: 1px solid #FF007A;
+  border-radius: 48px;
+  background-color: transparent;
+  cursor: pointer;
+
+  img {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.slick-dots{
+  display: flex;
+  justify-content: center;
+  bottom: -90px !important;
+  list-style-type: none;
+
+  li{
+    margin: 50px 10px;
+  }
+
+  button{
+    display: block;
+    width: 7.68px !important;
+    height: 7.68px !important;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: #F4DCDC !important;
+    transition: background-color 0.3s ease;
+
+    &::before{
+      color: transparent !important;
+    }
+
+    &:hover{
+      background-color: #FF007A !important;
+    }
+  }
+
+  li.slick-active button{
+    background-color: #FF007A !important;
+  }
+
+}

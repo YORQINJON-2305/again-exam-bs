@@ -2,17 +2,188 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./bootstrap-5.2.2-dist/bs-css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/slick-theme.css">
-    <link rel="stylesheet" href="./css/slick.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="./bootstrap-5.2.2-dist/bs-css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/slick-theme.css" rel="stylesheet">
+    <link href="./css/slick.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
     <title>Document</title>
 </head>
-<body class="bg-success">
-    
-    
+<body>
+
+    <div class="top-wrapper">
+        <header class="site-header">
+            <div class="s-container">
+                <div class="header-wrap d-flex align-items-center justify-content-between">
+                    <button class="dark-mode-btn"></button>
+                    <a class="site-logo" href="./index.html">
+                        <img alt="Site's logo" src="./images/site-logo.svg">
+                    </a>
+                    <nav class="sitenav">
+                        <ul class="nav-list d-flex flex-column align-items-center mb-0 list-unstyled">
+                            <li class="nav-item">
+                                <a class="nav-link text-decoration-none fw-bold text-white" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-decoration-none fw-bold text-white" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-decoration-none fw-bold text-white" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-decoration-none fw-bold text-white" href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="burger-btn"></button>
+                </div>
+            </div>
+        </header>
+        <section class="hero">
+            <div class="s-container">
+                <div class="hero-wrap">
+                    <div class="hero-text-wrap text-center position-relative">
+                        <h1 class="hero-title text-white fw-bolder my-0">Your digital business is in good hands with us!</h1>
+                        <div class="text-wrap">
+                            <p class="hero-text text-white my-0">Make your work easier with an integrated ecosystem that lets all departments work properly together.</p>
+                        </div>
+                        <div class="modal-wrap position-absolute">
+                            <button class="iframe-close"></button>
+                            <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="iframe-modal" src="https://www.youtube.com/embed/qtFiwEkQNjM?start=5" title="YouTube video player"></iframe>
+                        </div>
+                        <div class="overlay"></div>
+                        <div class="hero-link-wrap">
+                            <button class="hero-link-btn d-flex align-items-center justify-content-center w-100 text-white fw-semibold">Watch Video</button>
+                            <button class="hero-link-started d-block w-100 text-white fw-semibold">Get Started</button>
+                        </div>
+                    </div>
+                    <div class="hero-img-wrap d-flex justify-content-center position-absolute translate-middle-x">
+                        <img alt="Mackbook photo" class="img-fluid" src="./images/hero-img.png" srcset="./images/hero-img.png 1x, ./images/hero-img@2x.png 2x">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <main class="site-main">
+
+        <section class="software">
+            <div class="s-container">
+                <div class="software-wrap">
+                    <div class="software-title-wrap text-center">
+                        <h2 class="software-title fw-bold my-0">Software Solutions That Fit Your Needs</h2>
+                        <p class="software-text">The features to boost your productivity</p>
+                    </div>
+                    <ul class="d-flex flex-column align-items-center list-unstyled text-decoration-none ps-0 flex-lg-row align-items-lg-stretch">
+                        <li class="software-item">
+                            <img alt="Login form img" class="software-item-img img-fluid" height="300" src="./images/task-managment.png" srcset="./images/task-managment.png 1x, ./images/task-managment@2x.png 2x" width="357">
+                            <div class="text-center">
+                                <h3 class="software-item-title fw-bold">Task Management</h3>
+                                <p class="software-item-text my-0">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                                <a class="software-item-link text-decoration-none d-block" href="#">View More</a>
+                            </div>
+                        </li>
+                        <li class="software-item">
+                            <img alt="Automation diagram" class="software-item-img img-fluid" height="300" src="./images/automation.png" srcset="./images/automation.png 1x, ./images/automation@2x.png 2x" width="357">
+                            <div class="text-center">
+                                <h3 class="software-item-title fw-bold">Automation</h3>
+                                <p class="software-item-text my-0">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                                <a class="software-item-link text-decoration-none d-block" href="#">View More</a>
+                            </div>
+                        </li>
+                        <li class="software-item">
+                            <img alt="Budgeting Tools" class="software-item-img img-fluid" height="300" src="./images/budgeting.png" srcset="./images/budgeting.png 1x, ./images/budgeting@2x.png 2x" width="357">
+                            <div class="text-center">
+                                <h3 class="software-item-title fw-bold">Budgeting Tools</h3>
+                                <p class="software-item-text my-0">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                                <a class="software-item-link text-decoration-none d-block" href="#">View More</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="protection">
+                <ul class="list-unstyled text-decoration-none ps-0">
+                    <li class="protection-item">
+                        <div class="s-container">
+                            <div class="d-flex flex-column flex-lg-row-reverse align-items-lg-center">
+                                <img alt="Easy Advance Protection" class="protection-img img-fluid" src="./images/easy-protection.png">
+                                <div class="protection-title-wrap text-center text-lg-start">
+                                    <h2 class="protection-title fw-bold my-0">Easy Advance Protection</h2>
+                                    <p class="protection-text my-0">Use marketing automation to identify hot leads and email your sales team telling them to follow up. Nurture and contact leads at the opportune time to maximize.</p>
+                                    <a class="protection-link fw-semibold text-decoration-none" href="#">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="protection-item">
+                        <div class="s-container">
+                            <div class="d-flex flex-column flex-lg-row align-items-lg-center">
+                                <img alt="Easy Advance Protection" class="protection-img img-fluid" src="./images/mode-easy-protection.png">
+                                <div class="protection-title-wrap text-center text-lg-start">
+                                    <h2 class="protection-title fw-bold my-0">Advance Protection Mode Easy </h2>
+                                    <p class="protection-text my-0">Use marketing automation to identify hot leads and email your sales team telling them to follow up. Nurture and contact leads at the opportune time to maximize.</p>
+                                    <a class="protection-link fw-semibold text-decoration-none" href="#">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+        </section>
+
+        <section class="customer">
+            <div class="s-container">
+                <div class="text-center">
+                    <h2 class="customer-title fw-bold my-0">Customer testimonials</h2>
+                    <p class="customer-text my-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+
+                <ul class="customer-list list-unstyled mx-auto d-flex justify-content-center">
+                    <li class="customer-item">
+                        <p class="customer-item-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
+                        <div class="name-wrap d-flex align-items-center">
+                            <span class="d-block">
+                                <strong>Brooklyn Simmons</strong>
+                                <p class="mb-0">Bank of America</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="customer-item">
+                        <p class="customer-item-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
+                        <div class="name-wrap d-flex align-items-center">
+                            <span class="d-block">
+                                <strong>Brooklyn Simmons</strong>
+                                <p class="mb-0">Bank of America</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="customer-item">
+                        <p class="customer-item-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
+                        <div class="name-wrap d-flex align-items-center">
+                            <span class="d-block">
+                                <strong>Brooklyn Simmons</strong>
+                                <p class="mb-0">Bank of America</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="customer-item">
+                        <p class="customer-item-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
+                        <div class="name-wrap d-flex align-items-center">
+                            <span class="d-block">
+                                <strong>Brooklyn Simmons</strong>
+                                <p class="mb-0">Bank of America</p>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
 
 
     <script src="./bootstrap-5.2.2-dist/bs-js/bootstrap.bundle.min.js"></script>
